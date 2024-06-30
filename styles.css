@@ -1,43 +1,48 @@
-body,
-html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #F8F9FA;
+    /* Світло-сірий фон */
 }
-
-
-.logo {
-    width: 180;
-    height: 90}
-
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #555555;
+    /* Синій */
+    color: white;
     padding: 10px 20px;
 }
 
-nav .logo {
-    color: #fff;
-    font-size: 24px;
+nav img.logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    /* Доданий відступ від лівої сторони */
 }
 
 nav ul {
+    font-family: "Fira Sans", sans-serif;
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    gap: 45px;
 }
 
 nav ul li {
-    margin-left: 20px;
+    display: inline;
 }
 
+nav ul li a {
+    font-family: "Fira Sans", sans-serif;
+    color: #61ce70a6;
+    text-decoration: none;
+}
 
-
-.baner {
+/* Секція 2 */
+.banner {
     background: url('images/pallets-background.jpg') no-repeat center center/cover;
     height: 400px;
     display: flex;
@@ -45,34 +50,45 @@ nav ul li {
     align-items: center;
     position: relative;
     text-align: center;
-    color: white; }
-
-        .banner-content {
-            background: rgba(0, 0, 0, 0.5);
-            /* Напівпрозорий фон для тексту */
-            padding: 20px;
-        }
-    
-        .banner h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-    
-        .banner p {
-            margin: 10px 0 0;
-            font-size: 1.5em;
-        }
-
-.product-section {
-    display: flex;
-    align-items: center;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
+    color: white;
 }
 
-.product-section img {
-    width: 50%;
+.banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    /* Напівпрозорий фон для тексту */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-family: "Fira Sans", sans-serif;
+    margin: 0;
+    font-size: 3em;
+}
+
+.banner p {
+    font-family: "Fira Sans", sans-serif;
+    margin: 10px 0 0;
+    font-size: 1.5em;
+}
+
+/* Секція 3 */
+.product-section {
+    padding: 20px;
+    background-color: #FFFFFF;
+    /* Білий фон */
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+}
+
+.product-content img {
+    width: 500px;
+    /* Зменшена ширина картинки */
     height: auto;
+    margin-right: 20px;
 }
 
 .product-details {
@@ -80,35 +96,70 @@ nav ul li {
 }
 
 .product-details h2 {
-    font-size: 28px;
+    margin-top: 0;
+    color: #61CE70;
+    /* Синій */
 }
 
 .product-details p {
-    font-size: 18px;
     margin: 5px 0;
 }
 
-.quality-section {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.quality-section img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
+/* Секція 5 */
 .contact-section {
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
+    background-color: #555555;
+    /* Темно-сірий фон */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    gap: 40px;
+    /* Відстань між стовпчиками */
 }
 
+.contact-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.contact-column h2 {
+    color: #61CE70;
+    /* Основний текст - зелений */
+    font-size: 16px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.contact-column h3 {
+    margin-top: 20px;
+    color: #61CE70;
+    /* Основний текст - зелений */
+    font-size: 16px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.contact-column p {
+    color: #C6C6C6;
+    /* Другорядний текст - світло-сірий */
+    font-size: 14px;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 5px;
+}
+
+/* Секція 6 */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #343a40;
+    /* Сірий */
+    color: rgb(141, 139, 139);
     text-align: center;
-    padding: 20px;
+    padding: 10px 20px;
+}
+
+footer a {
+    color: #FFC107;
+    /* Оранжевий */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
