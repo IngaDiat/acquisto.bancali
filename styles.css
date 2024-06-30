@@ -9,6 +9,8 @@ html {
 .logo {
     width: 180;
     height: 90}
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -33,33 +35,33 @@ nav ul li {
     margin-left: 20px;
 }
 
-nav ul li a,
-nav ul li button {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 
-.banner {
-    background: url('pallets-background.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
+
+.baner {
+    background: url('images/pallets-background.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     text-align: center;
-    padding: 100px 20px;
-}
+    color: white; }
 
-.banner h1 {
-    font-size: 50px;
-    margin: 0;
-}
-
-.banner p {
-    font-size: 24px;
-    margin: 10px 0 0;
-}
+        .banner-content {
+            background: rgba(0, 0, 0, 0.5);
+            /* Напівпрозорий фон для тексту */
+            padding: 20px;
+        }
+    
+        .banner h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+    
+        .banner p {
+            margin: 10px 0 0;
+            font-size: 1.5em;
+        }
 
 .product-section {
     display: flex;
