@@ -1,9 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Vendita di Pallet</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <img class="logo" src="logo1.jpg" alt="logo" />
+      <ul>
+        <li><a href="#section2">Home</a></li>
+        <li><a href="#section3">Prodotti</a></li>
+        <li><a href="#section5">Contatti</a></li>
+      </ul>
+    </nav>
+
+    <section id="section2" class="banner">
+      <h1>Vendita di Pallet</h1>
+      <p>Qualità e Affidabilità</p>
+    </section>
+
+    <section id="section3" class="product-section">
+      <img src="pallet1.jpg" alt="Pallet" />
+      <div class="product-details">
+        <h2>Nome Prodotto</h2>
+        <p>Dimensioni: 120x80x14 cm</p>
+        <p>Prezzo: €25.00</p>
+      </div>
+    </section>
+
+    <section id="section4" class="quality-section">
+      <h2>Qualità dei nostri Pallet</h2>
+      <p>
+        I nostri pallet sono realizzati con i migliori materiali per garantire
+        durata e resistenza.
+      </p>
+      <img src="pallet2.jpg" alt="Qualità Pallet" />
+    </section>
+
+    <section id="section5" class="contact-section">
+      <h2>Contatti</h2>
+      <p>Nome: Mario Rossi</p>
+      <p>Indirizzo: Via Roma, 123, Milano</p>
+      <p>Telefono: +39 123 456 789</p>
+    </section>
+
+    <footer id="section6">
+      <p>&copy; 2024 Vendita di Pallet. Tutti i diritti riservati.</p>
+      <p>Email: info@venditapallet.it</p>
+      <p>Contatti: +39 123 456 789</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById('languageButton')
+        .addEventListener('click', function () {
+          if (document.documentElement.lang === 'it') {
+            document.documentElement.lang = 'en';
+            document.getElementById('languageButton').textContent = 'Italiano';
+            // Translate content to English
+          } else {
+            document.documentElement.lang = 'it';
+            document.getElementById('languageButton').textContent = 'English';
+            // Translate content to Italian
+          }
+        });
+    </script>
+  </body>
 </html>
