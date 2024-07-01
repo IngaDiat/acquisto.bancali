@@ -53,6 +53,8 @@ nav ul li a {
     position: relative;
     text-align: center;
     color: white;
+    margin-bottom: 150px;
+        /* Доданий відступ знизу */
 }
 
 .banner-content {
@@ -79,6 +81,7 @@ nav ul li a {
     padding: 20px;
     background-color: #FFFFFF;
     /* Білий фон */
+    margin-bottom: 150px;
 }
 
 .product-content {
@@ -145,6 +148,25 @@ nav ul li a {
     font-size: 14px;
     font-family: "Fira Sans", sans-serif;
     margin-top: 5px;
+}
+
+/* Картинки в Секції 5 */
+/* Картинки в Секції 5 */
+.contact-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 40px;
+    /* Відступ від лівої сторони */
+}
+
+.contact-images img {
+    width: 200px;
+    height: auto;
+    background-color: #555555;
+    /* Темно-сірий фон */
+    padding: 10px;
+    border-radius: 10px;
 }
 
 /* Секція 6 */
