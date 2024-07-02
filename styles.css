@@ -169,6 +169,7 @@ nav ul li a {
     border-radius: 10px;
 }
 
+
 /* Секція 6 */
 footer {
     background-color: #343a40;
@@ -186,4 +187,41 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+/* Медіа-запити */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .product-content {
+        flex-direction: column;
+    }
+
+    .product-content img {
+        width: 100%;
+        max-width: 300px;
+        margin-right: 0;
+    }
+
+    .product-details {
+        margin-left: 0;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-column {
+        margin: 20px 0;
+    }
+
+    .contact-images {
+        justify-content: center;
+    }
 }
