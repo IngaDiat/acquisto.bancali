@@ -54,7 +54,10 @@ nav ul li a {
     text-align: center;
     color: white;
     margin-bottom: 150px;
+    margin-top: 80px;
         /* Доданий відступ знизу */
+        margin-bottom: 150px;
+            /* Доданий відступ знизу */
 }
 
 .banner-content {
@@ -87,6 +90,7 @@ nav ul li a {
 .product-content {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .product-content img {
@@ -117,6 +121,7 @@ nav ul li a {
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     color: white;
     gap: 40px;
     /* Відстань між стовпчиками */
